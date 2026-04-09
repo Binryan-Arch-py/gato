@@ -31,4 +31,4 @@ para correr este programa se requiere un entorno compatible con herramientas GNU
 * Linux/MacOS: ./gato
 * Windows: gato.exe
 
-## Desarrollado por Bryan David Perez Arana
+### Desarrollado por Bryan David Perez Arana
