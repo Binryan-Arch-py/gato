@@ -1,5 +1,5 @@
 all:
-	g++ gato.cpp ganador.cpp -o gato
+	g++ main.cpp funciones.cpp -o gato
 
 clean:
 	rm -f gato
