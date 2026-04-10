@@ -17,6 +17,7 @@ int main() {
         ver_tabla(tabla);
         fin = seguir_juego(tabla);
         if (ver_ganador(tabla, (jugador == 2) ? J1 : J2)) {
+            std::cout << "gano el jugador " << jugador << std::endl;
             break;
         }
         if (fin == true) {
