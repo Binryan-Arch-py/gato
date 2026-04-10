@@ -26,10 +26,8 @@ int main() {
         }
         entrada_valida = false;
         while (!entrada_valida) {
-	        std::cout << "ingresa la cordenada vertical: ";
-	        std::cin >> vertical;
-	        std::cout << "ingresa la cordenada horizontal: ";
-	        std::cin >> horizontal;
+	        vertical = pedir_cordenada("vertical");
+	        horizontal = pedir_cordenada("horizontal");
             if ((vertical < 1 || vertical > 3) || (horizontal < 1 || horizontal > 3)) {
                 entrada_valida = false;
                 std::cout << "ERROR, esos valores no son accesibles" << std::endl;

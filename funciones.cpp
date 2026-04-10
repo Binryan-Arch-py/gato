@@ -1,5 +1,6 @@
 #include "funciones.h"
 #include <iostream>
+#include <limits>
 
 bool ver_ganador(const char (&tabla)[4][4], const char FICHA) {
     for (int i = 1; i <= 3; i++) {
@@ -40,3 +41,18 @@ bool seguir_juego(const char (&tabla)[4][4]) {
     return fin;
 }
 
+int pedir_cordenada(const char* x) {
+    int cordenada;
+    while (true) {
+        std::cout << "ingrea la cordenada " << x << ": ";
+        std::cin >> cordenada;
+        //comprobar si entrada fallo
+        if (std::cin.fail()) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "ERROR: por favor ingresa un numero valido. intente nuevamente\n";
+        } else {
+            return cordenada;
+        }
+    }
+}
