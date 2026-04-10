@@ -41,10 +41,10 @@ bool seguir_juego(const char (&tabla)[4][4]) {
     return fin;
 }
 
-int pedir_cordenada(const char* x) {
+int pedir_coordenada(const char* x) {
     int cordenada;
     while (true) {
-        std::cout << "ingrea la cordenada " << x << ": ";
+        std::cout << "ingresa la coordenada " << x << ": ";
         std::cin >> cordenada;
         //comprobar si entrada fallo
         if (std::cin.fail()) {

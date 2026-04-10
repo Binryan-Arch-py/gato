@@ -26,8 +26,8 @@ int main() {
         }
         entrada_valida = false;
         while (!entrada_valida) {
-	        vertical = pedir_cordenada("vertical");
-	        horizontal = pedir_cordenada("horizontal");
+	        vertical = pedir_coordenada("vertical");
+	        horizontal = pedir_coordenada("horizontal");
             if ((vertical < 1 || vertical > 3) || (horizontal < 1 || horizontal > 3)) {
                 entrada_valida = false;
                 std::cout << "ERROR, esos valores no son accesibles" << std::endl;
