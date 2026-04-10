@@ -13,6 +13,7 @@ int main() {
 	const char J1 = 'O', J2 = 'X';
 	int horizontal, vertical,jugador = 1;
 	bool fin = false, entrada_valida = false;
+    utils::clear();
 	while (!fin) {
         ver_tabla(tabla);
         fin = seguir_juego(tabla);
