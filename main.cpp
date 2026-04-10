@@ -1,7 +1,7 @@
 #include <iostream>
-#include <thread>
-#include <chrono>
 #include "funciones.h"
+#include "utilidades.h"
+
 
 int main() {
 	char tabla[4][4] = {
@@ -33,8 +33,8 @@ int main() {
                 entrada_valida = false;
                 std::cout << "ERROR, esos valores no son accesibles" << std::endl;
                 std::cout << "por favor ingresa solo cordenadas entre el 1 y el 3" << std::endl;
-                std::this_thread::sleep_for(std::chrono::milliseconds(350));
-                limpiar_pantalla();
+                utils::sleep(0.35);
+                utils::clear();
                 ver_tabla(tabla);
             } else {
                 entrada_valida = true;
@@ -46,13 +46,13 @@ int main() {
 	        } else {
 		        tabla[vertical][horizontal] = J2;
 	        }
-            std::this_thread::sleep_for(std::chrono::milliseconds(350));
-            limpiar_pantalla();
+            utils::sleep(0.35);
+            utils::clear();
 	    } else {
 		    std::cout << "ERROR, esa posicion esta ocupada\n\n";
 		    jugador = (jugador == 1) ? 2 : 1;
-            std::this_thread::sleep_for(std::chrono::milliseconds(350));
-            limpiar_pantalla();
+            utils::sleep(0.35);
+            utils::clear();
 	    }
 	    jugador = (jugador == 1) ? 2 : 1;
 	}

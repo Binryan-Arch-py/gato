@@ -40,6 +40,3 @@ bool seguir_juego(const char (&tabla)[4][4]) {
     return fin;
 }
 
-void limpiar_pantalla() {
-    std::cout << "\033[2J\033[1;1H" << std::flush;
-}
