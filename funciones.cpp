@@ -30,15 +30,14 @@ void ver_tabla(const char (&tabla)[4][4]) {
 }
 
 bool seguir_juego(const char (&tabla)[4][4]) {
-    bool fin = true;
     for (int i = 1; i <= 3; i++) {
         for (int j = 1; j <= 3; j++) {
             if (tabla[i][j] == '#') {
-                fin = false;
+                return false;
             }
         }
     }
-    return fin;
+    return true;
 }
 
 int pedir_coordenada(const char* x) {
