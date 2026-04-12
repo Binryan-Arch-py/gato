@@ -14,7 +14,7 @@ Programa creado como el famoso juego de gato, 3 en raya o tik tac toe, orientado
 * **Sistema:** Arch Linux/Void Linux
 * **Editor:** Neovim
 
-## 💻 Compatibilidad
+## Compatibilidad
 Este proyecto fue desarrollado y probado en **Arch Linux** y **Void Linux**.
 
 * **Linux:** 100% Funcional (Recomendado).
@@ -27,13 +27,13 @@ para correr este programa se requiere un entorno compatible con herramientas GNU
 * **GCC** compilador de C y C++
 * **GNU Make** herramienta de automatizacion de compilacion
 ### instalacion de dependencias:
-* Arch Linux y derivados:  sudo pacman -S base-devel
-* Debian Linux y derivados:  sudo apt install build-essential
-* MacOS:  xcode-select --install
+* Arch Linux y derivados:  ``sudo pacman -S base-devel``
+* Debian Linux y derivados:  ``sudo apt install build-essential``
+* MacOS:  ``xcode-select --install``
 ### instrucciones de compilacion:
 * entrar a la carpeta descargada del repositorio usando ``cd gato``
 * usar el comando ``make`` NOTA: el makefile esta configurado para usar g++ (gcc) si desea usar otro compilador es libre de modificarlo dentro del archivo
 ### instrucciones de ejecucion:
-* Linux/MacOS: ./gato
+* Linux/MacOS: ``./gato``
 
-### Desarrollado por Bryan David Perez Arana
+### Desarrollado por **Bryan David Perez Arana**
